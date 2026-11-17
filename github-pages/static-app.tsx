@@ -481,5 +481,5 @@ export function StaticDemoApp() {
     else if (runMatch) page = <RunRoute catalog={catalog} runId={decodeURIComponent(runMatch[1])} rawData={false} />;
     else page = <NotFound />;
   }
-  return <div className="app-frame static-app"><Header />{page}<footer className="static-footer">LLM Power Trace Explorer · Anonymous review copy</footer></div>;
+  return <div className="app-frame static-app"><Header />{page}<footer className="static-footer">LLM Power Trace Explorer · Anonymous review copy · GPU power traces &amp; run metadata: <a href="https://github.com/systems-power-review/AI-power-trace-explorer/blob/main/LICENSE-DATA">CC BY 4.0</a> · Profiling &amp; analysis code: <a href="https://github.com/systems-power-review/AI-power-trace-explorer/blob/main/LICENSE">Apache 2.0</a></footer></div>;
 }
